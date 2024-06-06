@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <h2>Dissertation</h2>
+    <p>
+        Description of diss. Link AI-Artwork Kaggle and github for ipynb
+    </p>
+
+    <object class="pdf" 
+            data="{{ url_for('static', filename='Dissertation.pdf') }}"
+            width="800"
+            height="500">
+    </object>
+
+    <h2>Sentiment Analysis</h2>
+
+    <p>
+        Description of NLPCW. Make only report and link ipynb
+    </p>
+
+    <object class="pdf" 
+            data="{{ url_for('static', filename='SentimentAnalysis.pdf') }}"
+            width="800"
+            height="500">
+    </object>
+
+
+{% endblock %}
