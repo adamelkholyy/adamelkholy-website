@@ -2,28 +2,59 @@
 
 {% block body %}
 
-    <h2>Dissertation</h2>
+    <h2>Model Attention in CNNs for Image Classification of
+        AI-Generated and Human-Made Artwork</h2>
     <p>
-        Description of diss. Link AI-Artwork Kaggle and github for ipynb
+        The recent rise in the popularity and prevalence of Artificially Intelligent (AI) generated art
+        presents certain challenges for human artists. With continued public discourse surrounding the
+        negative impacts of AI-generated art, human artists are concerned regarding the threat posed to
+        their market share, businesses and livelihoods. The efficiency of AI artwork generation models
+        is such that human artists cannot compete in terms of work-rate and recent studies suggest
+        that humans are unable to differentiate between AI-generated and human-made works. We
+        introduce an empirical method of distinction between AI-generated and human-made artworks
+        via a Machine Learning (ML) approach and endeavour to determine the defining differences
+        between the two classes by conducting an in depth analysis of model attention. We develop a
+        classification model through use of a Convolutional Neural Network (CNN) architecture so as
+        to achieve our aims and create our own labelled dataset for supervised training, made publicly
+        available for use in future research. We conduct experiments on network architecture, dataset
+        augmentation and hyperparameter tuning to produce a highly accurate and highly generalisable
+        model. Our final model achieves an accuracy of over 96% on the test set with an F1 score of
+        over 0.97. We conclude with an in depth investigation into model attention and propose our
+        own novel theory of classification along with an explanation of the defining differences between
+        AI-generated and human-made artworks. <br>
+        <a href="{{ url_for('static', filename='Dissertation.pdf') }}" target="_blank">pdf</a> | <a href="https://github.com/adamelkholyy/ai-artwork-attention" target="_blank">github repo</a> <br> 
     </p>
 
-    <object class="pdf" 
-            data="{{ url_for('static', filename='Dissertation.pdf') }}"
-            width="800"
-            height="500">
-    </object>
-
-    <h2>Sentiment Analysis</h2>
-
+    <h2>Super Mario Bros Reinforcement Learning Report</h2>
     <p>
-        Description of NLPCW. Make only report and link ipynb
+        Super Mario Bros Gym is an environment designed for 
+        compatibility with the OpenAI Gym framework. This project aims to develop an agent capable of
+        completing the levels of the eponymous Nintendo Entertainment System (NES) game by comparing
+        a variety of Reinforcement Learning (RL) algorithms. For this implementation, environment states
+        are either processed frames from the framebuffer of the game emulator or a vector of features (such
+        as Mario’s position and score). The reward function provides rewards based on how far rightwards
+        Mario has moved. In this report we experiment with the following RL models: Double Deep Q-Network (DDQN), Prioritised Experience Replay (PER), 
+        Dueling Network architecture, 
+        Noisy Network architecture, 
+        Distributional Network architecture and 
+        N-Step learning updates.
+        <br>
+        <a href="{{ url_for('static', filename='Reinforcement_Learning_Report.pdf') }}" target="_blank">pdf</a>
     </p>
 
-    <object class="pdf" 
-            data="{{ url_for('static', filename='SentimentAnalysis.pdf') }}"
-            width="800"
-            height="500">
-    </object>
+
+    <h2>IMDB Movie Review Sentiment Analysis Report</h2>
+    <p>
+        Sentiment analysis poses a useful and technically challenging task in the field of Natural Language
+        Processing. In this report we investigate the leading methods of sentiment analysis using a dataset
+        of 4000 IMDB movie reviews, sorted into positive and negative classes based
+        on their numerical rating. We evaluate different techniques of feature extraction as well as
+        differing model architectures in order to determine the highest performing approach. We develop
+        our own classification models for comparison with the existing sklearn implementations and
+        compare the metrics of each (accuracy, precision, recall and f1 score). Our implementation of the 
+        Guassian Naive Bayes model ultimately outperforms the existing sklearn implementation across all performance metrics. <br>
+        <a href="{{ url_for('static', filename='SentimentAnalysis.pdf') }}" target="_blank">pdf</a> | <a href="https://github.com/adamelkholyy/sentiment_analysis" target="_blank">github repo</a> <br> 
+    </p>
 
 
 {% endblock %}

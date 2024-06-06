@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Peter Simeth's basic flask pretty youtube downloader (v1.3)
+I must give due credit to Peter Smieth for the flask template used to create this website. 
+Thank you very much Peter!
 https://github.com/petersimeth/basic-flask-template
-© MIT licensed, 2018-2023
 """
 
 from flask import Flask, render_template
@@ -13,7 +13,7 @@ DEVELOPMENT_ENV = True
 app = Flask(__name__)
 
 app_data = {
-    "name": "Adam's Webpage",
+    "name": "Adam's Website",
     "description": "Adam's Website",
     "author": "Adam El Kholy and Peter Simeth",
     "html_title": "Adam's Website",
@@ -50,5 +50,4 @@ def contact():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(debug=DEVELOPMENT_ENV)
